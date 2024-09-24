@@ -1,29 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*Version mobile*/
-@media only screen and (max-width < 768px) {
+@media only screen and (max-width: 768px) {
 
+  .nav-logo{
+    display: flex;
+    justify-content: flex-start;
+  }
+  i, img{
+    margin: 12px;
+  }
+  .nav-logo > img {
+    width: 125px;
+  }
+  .nav-icons{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-icons i {
+    margin: 10px;
+  }
+  .nav-primary,
+  .logo-square {
+    display: none;
+  }
+  .fa-bars,
+  .fa-user,
+  .fa-heart,
+  .fa-shopping-cart {
+    color: #cad178;
+  }
+  .menu-item > .nav-text {
+    display: none;
+  }
 }
 /*Tablet greater or equal to 768px*/
-@media only screen and (max-width >= 768px) {
-
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 }
 /*Dekstop greater than or equal to 992px*/
-@media only screen and (max-width >= 992px) {
-
+@media only screen and (min-width: 992px) {
 }
 /*General aspects*/
-#top {
-    background-color: #434960;
-
+aside > nav {
+  background-color: #cad178;
+  display: flex;
+  flex-direction: column;
 }
-#lateral {
-    background-color: #CAD178;
+aside > nav > a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  background-color: #434960;
 }
 .item {
-    background-color:#95818D;
-    display: flex;
-    align-items: center;
-    margin: 15px;
-    padding: 25px;
-    width: 125px;
-    height: 125px;
+  background-color: #95818d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  padding: 25px;
+  width: 155px;
+  height: 155px;
+}
+.item:hover {
+  background-color: #c5abbb;
+  cursor: pointer;
+}
+a:hover{
+  font-weight: bold;
 }
