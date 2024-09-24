@@ -5,36 +5,49 @@
 }
 /*Version mobile*/
 @media only screen and (max-width: 768px) {
-
-  .nav-logo{
+  header {
     display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+  }
+  header > .nav-primary {
+    display: none;
+  }
+  .logo-square{
+    display: none;
+  }
+
+  .nav-primary,
+  .nav-logo,
+  .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo {
+    justify-content: center;
+  }
+
+  .nav-primary {
     justify-content: flex-start;
   }
-  i, img{
+
+  .nav-icons {
+    justify-content: flex-end;
+  }
+
+  i,
+  img {
     margin: 12px;
   }
+
   .nav-logo > img {
     width: 125px;
   }
-  .nav-icons{
-    display: flex;
-    justify-content: flex-end;
-  }
+
   .nav-icons i {
     margin: 10px;
-  }
-  .nav-primary,
-  .logo-square {
-    display: none;
-  }
-  .fa-bars,
-  .fa-user,
-  .fa-heart,
-  .fa-shopping-cart {
-    color: #cad178;
-  }
-  .menu-item > .nav-text {
-    display: none;
   }
 }
 /*Tablet greater or equal to 768px*/
@@ -70,6 +83,6 @@ header {
   background-color: #c5abbb;
   cursor: pointer;
 }
-a:hover{
+a:hover {
   font-weight: bold;
 }
