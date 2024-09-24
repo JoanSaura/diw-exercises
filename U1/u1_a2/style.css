@@ -1,0 +1,29 @@
+/*Version mobile*/
+@media only screen and (max-width < 768px) {
+
+}
+/*Tablet greater or equal to 768px*/
+@media only screen and (max-width >= 768px) {
+
+}
+/*Dekstop greater than or equal to 992px*/
+@media only screen and (max-width >= 992px) {
+
+}
+/*General aspects*/
+#top {
+    background-color: #434960;
+
+}
+#lateral {
+    background-color: #CAD178;
+}
+.item {
+    background-color:#95818D;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 25px;
+    width: 125px;
+    height: 125px;
+}

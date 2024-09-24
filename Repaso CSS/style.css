@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+    text-align: center;
+
+}
+main {
+    margin-top: 50px;
+}
+div{
+    display: inline-block;
+    width: calc(33% - 10px);
+    height: calc(50% - 10px);
+    background-color: #ccc;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+footer {
+    position: sticky;
+    width: 100%;
+    background-color: aquamarine;
+    top: 100px;
+}
