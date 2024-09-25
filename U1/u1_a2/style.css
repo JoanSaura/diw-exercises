@@ -3,38 +3,38 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*Version mobile*/
+/*Mobile version*/
 @media only screen and (max-width: 768px) {
   header {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 10px;
   }
-  header > .nav-primary {
-    display: none;
-  }
-  .logo-square{
+  .logo-square {
     display: none;
   }
 
-  .nav-primary,
   .nav-logo,
   .nav-icons {
     display: flex;
-    align-items: center;
   }
 
   .nav-logo {
-    justify-content: center;
-  }
-
-  .nav-primary {
     justify-content: flex-start;
+  }
+  .nav-logo > img {
+    width: 125px;
   }
 
   .nav-icons {
     justify-content: flex-end;
+  }
+  .nav-icons i {
+    margin: 10px;
+  }
+  .nav-icons span {
+    display: none;
   }
 
   i,
@@ -42,24 +42,73 @@
     margin: 12px;
   }
 
-  .nav-logo > img {
-    width: 125px;
+  main {
+    display: flex;
+    flex-direction: column;
   }
-
-  .nav-icons i {
-    margin: 10px;
+  .products-container {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  aside {
+    order: 1;
   }
 }
 /*Tablet greater or equal to 768px*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo-landscape {
+    display: none;
+  }
+
+  .logo-square {
+    width: 105px;
+  }
+  .nav-logo,
+  .nav-icons {
+    display: flex;
+  }
+  .nav-logo {
+    justify-content: flex-start;
+  }
+  .nav-icons {
+    justify-content: flex-end;
+  }
+  .nav-icons i{
+    margin: 10px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .products-container {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  aside {
+    order: 1;
+  }
 }
 /*Dekstop greater than or equal to 992px*/
 @media only screen and (min-width: 992px) {
 }
+.nav-logo,
+.nav-icons {
+  color: #cad178;
+}
 /*General aspects*/
+
+header > .nav-primary {
+  display: none;
+}
+
 aside > nav {
   background-color: #cad178;
   display: flex;
+  padding: 10px;
   flex-direction: column;
 }
 aside > nav > a {
@@ -76,8 +125,8 @@ header {
   justify-content: center;
   margin: 15px;
   padding: 25px;
-  width: 155px;
-  height: 155px;
+  width: 205px;
+  height: 205px;
 }
 .item:hover {
   background-color: #c5abbb;
