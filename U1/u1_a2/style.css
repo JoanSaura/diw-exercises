@@ -33,17 +33,6 @@
   img {
     margin: 12px;
   }
-
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  .products-container {
-    order: 2;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
   aside {
     order: 1;
   }
@@ -74,16 +63,6 @@
   img {
     margin: 12px;
   }
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  .products-container {
-    order: 2;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
   aside {
     order: 1;
   }
@@ -99,6 +78,18 @@
   .fa-bars {
     display: none;
   }
+  .nav-primary > .menu-item,
+  .nav-icons > .menu-item {
+    margin: 20px;
+  }
+  main{
+    flex-direction: row;
+  }
+
+  .products-container{
+   row-gap: 120px;
+  }
+ 
 }
 
 /*General aspects*/
@@ -110,9 +101,19 @@
 }
 aside > nav {
   background-color: #cad178;
-  display: flex;
+ display: flex;
   padding: 10px;
   flex-direction: column;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.products-container {
+  order: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 aside > nav > a {
   text-decoration: none;
