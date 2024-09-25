@@ -5,19 +5,11 @@
 }
 /*Mobile version*/
 @media only screen and (max-width: 768px) {
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+  header > .nav-primary {
+    display: none;
   }
   .logo-square {
     display: none;
-  }
-
-  .nav-logo,
-  .nav-icons {
-    display: flex;
   }
 
   .nav-logo {
@@ -58,10 +50,8 @@
 }
 /*Tablet greater or equal to 768px*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  header > .nav-primary {
+    display: none;
   }
   .logo-landscape {
     display: none;
@@ -69,10 +59,6 @@
 
   .logo-square {
     width: 105px;
-  }
-  .nav-logo,
-  .nav-icons {
-    display: flex;
   }
   .nav-logo {
     justify-content: flex-start;
@@ -107,21 +93,20 @@
   .logo-landscape {
     display: none;
   }
-}
-.nav-logo,
-.nav-icons {
-  color: #cad178;
+  .logo-square {
+    height: 115px;
+  }
+  .fa-bars {
+    display: none;
+  }
 }
 
 /*General aspects*/
-
-header > .nav-primary {
-  display: none;
-}
 .nav-primary,
 .nav-logo,
 .nav-icons {
-  cursor: pointer;
+  color: #cad178;
+  display: flex;
 }
 aside > nav {
   background-color: #cad178;
@@ -135,6 +120,10 @@ aside > nav > a {
 }
 header {
   background-color: #434960;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 .item {
   background-color: #95818d;
