@@ -112,12 +112,17 @@
 .nav-icons {
   color: #cad178;
 }
+
 /*General aspects*/
 
 header > .nav-primary {
   display: none;
 }
-
+.nav-primary,
+.nav-logo,
+.nav-icons {
+  cursor: pointer;
+}
 aside > nav {
   background-color: #cad178;
   display: flex;
