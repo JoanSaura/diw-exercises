@@ -58,6 +58,11 @@
 }
 /*Tablet greater or equal to 768px*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .logo-landscape {
     display: none;
   }
@@ -74,9 +79,14 @@
   }
   .nav-icons {
     justify-content: flex-end;
+    margin-right: 15px;
   }
-  .nav-icons i{
+  .nav-icons i {
     margin: 10px;
+  }
+  i,
+  img {
+    margin: 12px;
   }
   main {
     display: flex;
@@ -94,6 +104,9 @@
 }
 /*Dekstop greater than or equal to 992px*/
 @media only screen and (min-width: 992px) {
+  .logo-landscape {
+    display: none;
+  }
 }
 .nav-logo,
 .nav-icons {
@@ -134,4 +147,5 @@ header {
 }
 a:hover {
   font-weight: bold;
+  cursor: pointer;
 }
