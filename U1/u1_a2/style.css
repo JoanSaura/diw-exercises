@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*Mobile version*/
+
+/* Mobile version */
 @media only screen and (max-width: 768px) {
   header > .nav-primary {
     display: none;
@@ -11,14 +12,12 @@
   .logo-square {
     display: none;
   }
-
   .nav-logo {
     justify-content: flex-start;
   }
   .nav-logo > img {
     width: 125px;
   }
-
   .nav-icons {
     justify-content: flex-end;
   }
@@ -28,10 +27,12 @@
   .nav-icons span {
     display: none;
   }
-
   i,
   img {
     margin: 12px;
+  }
+  main {
+    flex-direction: column;
   }
   .products-container {
     order: 2;
@@ -40,7 +41,8 @@
     order: 1;
   }
 }
-/*Tablet greater or equal to 768px*/
+
+/* Tablet version */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   header > .nav-primary {
     display: none;
@@ -48,7 +50,6 @@
   .logo-landscape {
     display: none;
   }
-
   .logo-square {
     width: 105px;
   }
@@ -65,15 +66,16 @@
   .nav-icons i {
     margin: 10px;
   }
+  main {
+    flex-direction: column;
+  }
   i,
   img {
     margin: 12px;
   }
-  main {
-    flex-direction: row-reverse;
-  }
 }
-/*Dekstop greater than or equal to 992px*/
+
+/* Desktop version */
 @media only screen and (min-width: 992px) {
   .logo-landscape {
     display: none;
@@ -88,39 +90,57 @@
   .nav-icons > .menu-item {
     margin: 20px;
   }
+  main {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 675px;
+    
+  }
   .products-container {
-    row-gap: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-grow: 1;
   }
   aside {
-    background-color: #434960;
+    display: flex;
+    flex-basis: 12%;
+  }
+  aside > nav {
+    justify-content: flex-end;
   }
 }
 
-/*General aspects*/
+/* General aspects */
 .nav-primary,
 .nav-logo,
 .nav-icons {
   color: #cad178;
   display: flex;
 }
-aside > nav {
-  background-color: #cad178;
-  display: flex;
-  padding: 10px;
-  flex-direction: column;
-}
 main {
   display: flex;
+}
+aside {
+  background-color: #cad178;
+}
+aside > nav {
+  padding: 15px;
+  display: flex;
   flex-direction: column;
+}
+aside > nav > a {
+  text-decoration: none;
+  margin: 5px;
+  color: black;
+  margin-left: 0;
 }
 .products-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-aside > nav > a {
-  text-decoration: none;
-  color: black;
 }
 header {
   background-color: #434960;
@@ -154,8 +174,3 @@ a:hover,
 a:hover {
   font-weight: bold;
 }
-.menu-item:hover {
-  text-decoration: underline;
-  color: #cad178;
-}
-
