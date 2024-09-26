@@ -37,9 +37,6 @@
   .products-container {
     order: 2;
   }
-  aside {
-    order: 1;
-  }
 }
 
 /* Tablet version */
@@ -90,11 +87,13 @@
   .nav-icons > .menu-item {
     margin: 20px;
   }
+  header {
+    height: 145px;
+  }
   main {
     flex-direction: row-reverse;
     justify-content: space-between;
-    height: 675px;
-    
+    height: calc(100vh - 145px); 
   }
   .products-container {
     display: flex;
@@ -106,13 +105,17 @@
   }
   aside {
     display: flex;
-    flex-basis: 12%;
+    flex-basis: 13%;
   }
   aside > nav {
     justify-content: flex-end;
+    
   }
+  aside > nav > a {
+    margin: 25px;
+  }
+  
 }
-
 /* General aspects */
 .nav-primary,
 .nav-logo,
