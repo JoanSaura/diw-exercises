@@ -33,6 +33,9 @@
   img {
     margin: 12px;
   }
+  .products-container {
+    order: 2;
+  }
   aside {
     order: 1;
   }
@@ -56,6 +59,9 @@
     justify-content: flex-end;
     margin-right: 15px;
   }
+  .products-container {
+    order: 2;
+  }
   .nav-icons i {
     margin: 10px;
   }
@@ -63,8 +69,8 @@
   img {
     margin: 12px;
   }
-  aside {
-    order: 1;
+  main {
+    flex-direction: row-reverse;
   }
 }
 /*Dekstop greater than or equal to 992px*/
@@ -82,14 +88,12 @@
   .nav-icons > .menu-item {
     margin: 20px;
   }
-  main{
-    flex-direction: row;
+  .products-container {
+    row-gap: 120px;
   }
-
-  .products-container{
-   row-gap: 120px;
+  aside {
+    background-color: #434960;
   }
- 
 }
 
 /*General aspects*/
@@ -101,7 +105,7 @@
 }
 aside > nav {
   background-color: #cad178;
- display: flex;
+  display: flex;
   padding: 10px;
   flex-direction: column;
 }
@@ -110,7 +114,6 @@ main {
   flex-direction: column;
 }
 .products-container {
-  order: 2;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -136,11 +139,23 @@ header {
   width: 205px;
   height: 205px;
 }
+.nav-text:hover,
+.menu-item > i:hover,
+.nav-primary > div:hover,
+.nav-logo > .fa-bars:hover,
+.nav-logo > img:hover,
+a:hover,
+.item:hover {
+  cursor: pointer;
+}
 .item:hover {
   background-color: #c5abbb;
-  cursor: pointer;
 }
 a:hover {
   font-weight: bold;
-  cursor: pointer;
 }
+.menu-item:hover {
+  text-decoration: underline;
+  color: #cad178;
+}
+
