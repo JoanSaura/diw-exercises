@@ -7,10 +7,6 @@
     padding: 0;
     margin: 0;
 }
-/*Header style*/
-#header {
-    background-color: #007EA7;
-}
 /*Phone display*/
 @media (max-width: 600px)  {
     .logo-img-desk{
@@ -51,6 +47,7 @@
 
 /*General aspects*/
 #header {
+    background-color:#13142a;
     display: flex;
     justify-content: space-between;
 }
@@ -74,7 +71,7 @@
     font-size: 60px; 
 }
 #user-cont:hover  {
-    background-color:#13142a;
+    background-color: #007EA7;  
 }
 #mobile-menu > .mobile_button {
     background-color:#13142a;
