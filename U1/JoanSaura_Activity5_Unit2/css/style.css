@@ -67,6 +67,7 @@
         height: calc(100vh - 90px);
         width: 70%;
         height: fit-content;
+        border-radius: 15px;
     }
 
     .sketchfab-embed-wrapper > iframe {
