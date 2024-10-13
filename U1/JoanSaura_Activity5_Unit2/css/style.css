@@ -8,6 +8,7 @@
   padding: 0;
   margin: 0;
 }
+
 /*Phone Display*/
 @media (max-width: 600px) {
   .logo-img-desk,
@@ -27,6 +28,12 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     width: 100%;
+    background: rgb(12, 0, 34);
+    background: linear-gradient(
+      90deg,
+      rgba(12, 0, 34, 1) 50%,
+      rgba(10, 75, 116, 1) 100%
+    );
   }
 
   #mobile-menu > a:nth-child(1) {
@@ -47,7 +54,7 @@
 
   .mobile_button {
     width: 100%;
-    background-color: #13142a;
+
     color: #aaa6ca;
     padding: 15px;
     text-align: center;
@@ -80,6 +87,13 @@
 
 /* Desktop display */
 @media (min-width: 601px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
   .logo-img-mob,
   .mobile_button {
     display: none;
@@ -124,7 +138,7 @@
     justify-content: flex-start;
     padding: 20px;
   }
-  
+
   #lateral .link {
     margin: 15px 0;
     padding: 10px;
@@ -132,19 +146,19 @@
     border: 2px solid black;
     text-align: center;
   }
-  
+
   #lateral .link a {
     text-decoration: none;
     color: black;
     font-weight: bold;
   }
-  
+
   #lateral .close {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 20px;
   }
-  
+
   #lateral .close i {
     cursor: pointer;
     font-size: 20px;
@@ -153,7 +167,12 @@
 
 /* General aspects */
 #header {
-  background-color: #13142a;
+  background: rgb(12, 0, 34);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 0, 34, 1) 50%,
+    rgba(10, 75, 116, 1) 100%
+  );
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -202,17 +221,20 @@ h2 {
 }
 #main-content,
 #login {
-  padding: 25px;
+  padding: 15px;
 }
 
 #main-content .title-sect {
   margin-bottom: 25px;
 }
 
-p {
-  margin: 15px;
+p,a {
   font-family: "Nunito Sans", sans-serif;
+}
+p{
   font-size: 20px;
+  margin: 15px;
+
 }
 .sketchfab-embed-wrapper > iframe {
   box-shadow: 5px 5px 5px 5px;
@@ -221,20 +243,41 @@ p {
 /*Footer*/
 #footer {
   width: 100%;
-  height: 70px;
-  background-color: #13142a;
+  height: 60px;
+  background-color: #13142a; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+
 }
-#footer > .author {
-  justify-content: flex-end;
-  color: aliceblue;
+
+#footer-links {
+  display: flex; 
 }
+
+#footer-links a {
+  color: aliceblue; 
+  text-decoration: none; 
+  margin-left: 20px;
+  margin-right: 20px; 
+}
+
+#footer-links a:hover {
+  text-decoration: underline;
+}
+
+.author {
+  color: aliceblue; 
+}
+
+
 
 /*Login */
 #login {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
 }
 #login .login-label {
   font-family: "Nunito Sans", sans-serif;
