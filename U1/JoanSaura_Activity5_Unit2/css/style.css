@@ -11,6 +11,9 @@
 
 /*Phone Display*/
 @media (max-width: 600px) {
+  body {
+    background-color: #ffffff;
+  }
   .logo-img-desk,
   #header > h1,
   #lateral {
@@ -22,18 +25,17 @@
     height: 100px;
     justify-content: flex-start;
   }
+  #header{
+    background: rgb(12,12,34);
+   background: linear-gradient(0deg, rgba(12,12,34,1) 0%, rgba(9,41,67,1) 16%, rgba(0,126,167,1) 100%);
+  }
 
   #mobile-menu {
+    background: rgb(12,12,34);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     width: 100%;
-    background: rgb(12, 0, 34);
-    background: linear-gradient(
-      90deg,
-      rgba(12, 0, 34, 1) 50%,
-      rgba(10, 75, 116, 1) 100%
-    );
   }
 
   #mobile-menu > a:nth-child(1) {
@@ -93,6 +95,13 @@
     padding: 0;
     justify-content: space-between;
     min-height: 100vh;
+    background: rgb(12, 12, 34);
+    background: linear-gradient(
+      0deg,
+      rgba(12, 12, 34, 1) 0%,
+      rgba(9, 41, 67, 1) 41%,
+      rgba(0, 126, 167, 1) 100%
+    );
   }
   .logo-img-mob,
   .mobile_button {
@@ -105,10 +114,9 @@
   #main-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
   }
   #main-container > #main-content {
-    background-color: #aaa6ca;
+    background-color: #fffffffd;
     height: calc(100vh - 90px);
     width: 70%;
     height: fit-content;
@@ -128,21 +136,25 @@
   }
   /*Lateral*/
   #lateral {
-    order: 0;
     left: 0;
-    top: 0;
     width: 200px;
     background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: grid;
     padding: 20px;
+    position: fixed;
+    height: 50vh;
+    border-radius: 0 25px 25px 0;
+    border: 2px solid black;
   }
 
   #lateral .link {
-    margin: 15px 0;
+    margin: 15px;
     padding: 10px;
     font-size: 18px;
+    align-items: center;
+    display: flex;
+
+    justify-content: center;
     border: 2px solid black;
     text-align: center;
   }
@@ -167,12 +179,6 @@
 
 /* General aspects */
 #header {
-  background: rgb(12, 0, 34);
-  background: linear-gradient(
-    90deg,
-    rgba(12, 0, 34, 1) 50%,
-    rgba(10, 75, 116, 1) 100%
-  );
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -196,7 +202,7 @@ h2 {
 }
 
 #user-cont {
-  border: 4px solid #aaa6ca;
+  border: 4px solid #ffffff;
   border-radius: 30px;
   padding: 5px;
   display: flex;
@@ -208,12 +214,12 @@ h2 {
 }
 
 #user-cont > .fa-user {
-  color: #aaa6ca;
+  color: #ffffff;
   font-size: 50px;
 }
 
 #user-cont:hover {
-  background-color: #007ea7;
+  background-color: #000d11;
 }
 
 #main-content {
@@ -228,13 +234,13 @@ h2 {
   margin-bottom: 25px;
 }
 
-p,a {
+p,
+a {
   font-family: "Nunito Sans", sans-serif;
 }
-p{
+p {
   font-size: 20px;
   margin: 15px;
-
 }
 .sketchfab-embed-wrapper > iframe {
   box-shadow: 5px 5px 5px 5px;
@@ -242,24 +248,24 @@ p{
 
 /*Footer*/
 #footer {
+  position: relative;
   width: 100%;
   height: 60px;
-  background-color: #13142a; 
+  background-color: #0c0c22;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
-
+  justify-content: space-between;
 }
 
 #footer-links {
-  display: flex; 
+  display: flex;
 }
 
 #footer-links a {
-  color: aliceblue; 
-  text-decoration: none; 
+  color: aliceblue;
+  text-decoration: none;
   margin-left: 20px;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 #footer-links a:hover {
@@ -267,10 +273,8 @@ p{
 }
 
 .author {
-  color: aliceblue; 
+  color: aliceblue;
 }
-
-
 
 /*Login */
 #login {
