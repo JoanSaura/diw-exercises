@@ -9,41 +9,40 @@
 /*Dekstop display*/
 @media (min-width: 601px) {
   #lateral {
-    transition: left 0.3s ease-in-out; 
+    transition: left 0.3s ease-in-out;
+  }
+  #lateral .close i {
+    transition: transform 0.3s ease;
+  }
+  #lateral .close:hover {
+    background: #0c0022;
+    color: #ffffff;
+    transition: transform 0.3s;
+  }
 }
 
-#lateral .close i {
-    transition: transform 0.3s ease; 
-}
-#lateral .close:hover {
-  background: #0c0022;
-  color: #ffffff;
-  transition: transform 0.3s ; 
-}
-
-}
 /*General Aspcets*/
 #user-cont:hover {
   background-color: #000d11;
 }
 #lateral > .link {
-  background: linear-gradient(to bottom, #00A8E8, #007EA7, #003459);
+  background: linear-gradient(to bottom, #00a8e8, #007ea7, #003459);
   background-size: 100% 200%;
   transition: background-position 1s ease;
 }
 
 #lateral > .link:hover,
-#lateral > .link > a:hover{
+#lateral > .link > a:hover {
   color: aliceblue;
   background-position: 0 100%;
 }
 
 @keyframes colorShift {
   0% {
-    background-color: #00A8E8;
+    background-color: #00a8e8;
   }
   50% {
-    background-color: #007EA7;
+    background-color: #007ea7;
   }
   100% {
     background-color: #003459;

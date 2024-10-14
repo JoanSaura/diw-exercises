@@ -75,6 +75,10 @@
     width: 500px;
     height: 400px;
   }
+  #footer {
+    background-color: #0c0022;
+    position: relative;
+  }
 }
 
 /* Desktop display */
@@ -115,7 +119,8 @@
     padding: 30px;
     width: 70%;
     margin: 40px;
-    background-color: #aaa6ca;
+    background-color: #007ea7;
+    color: white;
   }
   /*Lateral*/
   #lateral {
@@ -250,23 +255,21 @@ p {
   display: flex;
 }
 
-#footer-links a {
+#footer-links a,
+.author{
   color: aliceblue;
   text-decoration: none;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.author {
-  color: aliceblue;
-}
 
 /*Login */
 #login {
-  width: 60%;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
 }
 #login .login-label {
   font-family: "Nunito Sans", sans-serif;
