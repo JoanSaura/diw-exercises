@@ -1,0 +1,58 @@
+/*Phone display*/
+@media (max-width: 600px) {
+  .mobile_button:hover {
+    background-color: #aaa6ca;
+    color: #13142a;
+    transition: 1.5s;
+  }
+}
+/*Dekstop display*/
+@media (min-width: 601px) {
+  #lateral {
+    transition: left 0.3s ease-in-out; 
+}
+
+#lateral .close i {
+    transition: transform 0.3s ease; 
+}
+#lateral .close:hover {
+  background: #0c0022;
+  color: #ffffff;
+  transition: transform 0.3s ; 
+}
+
+}
+/*General Aspcets*/
+#user-cont:hover {
+  background-color: #000d11;
+}
+#lateral > .link {
+  background: linear-gradient(to bottom, #00A8E8, #007EA7, #003459);
+  background-size: 100% 200%;
+  transition: background-position 1s ease;
+}
+
+#lateral > .link:hover,
+#lateral > .link > a:hover{
+  color: aliceblue;
+  background-position: 0 100%;
+}
+
+@keyframes colorShift {
+  0% {
+    background-color: #00A8E8;
+  }
+  50% {
+    background-color: #007EA7;
+  }
+  100% {
+    background-color: #003459;
+  }
+}
+
+#footer-links a:hover {
+  text-decoration: underline;
+}
+#login > .sumbit:hover {
+  background-color: #0899c9;
+}

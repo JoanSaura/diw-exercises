@@ -1,0 +1,20 @@
+/*Phone display*/
+@media (max-width: 600px) {
+    #header{
+        background: rgb(  12,12,34);
+       background: linear-gradient(0deg, rgba(12,12,34,1) 0%, rgba(9,41,67,1) 16%, rgba(0,126,167,1) 100%);
+      }
+}
+/*Dekstop display*/
+@media (min-width: 601px) {
+body {
+    background: rgb(12, 12, 34);
+    background: linear-gradient(
+      0deg,
+      rgba(12, 12, 34, 1) 0%,
+      rgba(9, 41, 67, 1) 41%,
+      rgba(0, 126, 167, 1) 100%
+    );
+}
+}
+/*General Aspcets*

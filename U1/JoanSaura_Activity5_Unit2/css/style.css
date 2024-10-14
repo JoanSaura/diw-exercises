@@ -25,13 +25,9 @@
     height: 100px;
     justify-content: flex-start;
   }
-  #header{
-    background: rgb(12,12,34);
-   background: linear-gradient(0deg, rgba(12,12,34,1) 0%, rgba(9,41,67,1) 16%, rgba(0,126,167,1) 100%);
-  }
 
   #mobile-menu {
-    background: rgb(12,12,34);
+    background: rgb(12, 12, 34);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -63,12 +59,6 @@
     cursor: pointer;
   }
 
-  .mobile_button:hover {
-    background-color: #aaa6ca;
-    color: #13142a;
-    transition: 1.5s;
-  }
-
   #main-container {
     display: flex;
     flex-direction: column;
@@ -95,13 +85,6 @@
     padding: 0;
     justify-content: space-between;
     min-height: 100vh;
-    background: rgb(12, 12, 34);
-    background: linear-gradient(
-      0deg,
-      rgba(12, 12, 34, 1) 0%,
-      rgba(9, 41, 67, 1) 41%,
-      rgba(0, 126, 167, 1) 100%
-    );
   }
   .logo-img-mob,
   .mobile_button {
@@ -145,36 +128,47 @@
     height: 50vh;
     border-radius: 0 25px 25px 0;
     border: 2px solid black;
-  }
+    box-sizing: border-box;
+}
 
-  #lateral .link {
+#lateral .link {
     margin: 15px;
     padding: 10px;
     font-size: 18px;
     align-items: center;
     display: flex;
-
     justify-content: center;
     border: 2px solid black;
     text-align: center;
-  }
+}
 
-  #lateral .link a {
+#lateral .link a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-  }
+}
 
-  #lateral .close {
+#lateral .close {
+    position: absolute;
+    right: -30px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 40px;
+    height: 40px;
     display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20px;
-  }
-
-  #lateral .close i {
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    border: 2px solid black;
     cursor: pointer;
+}
+
+#lateral .close i {
     font-size: 20px;
-  }
+    cursor: pointer;
+}
+
 }
 
 /* General aspects */
@@ -216,10 +210,6 @@ h2 {
 #user-cont > .fa-user {
   color: #ffffff;
   font-size: 50px;
-}
-
-#user-cont:hover {
-  background-color: #000d11;
 }
 
 #main-content {
@@ -267,10 +257,6 @@ p {
   margin-right: 20px;
 }
 
-#footer-links a:hover {
-  text-decoration: underline;
-}
-
 .author {
   color: aliceblue;
 }
@@ -294,9 +280,6 @@ p {
 }
 #login > .login-label {
   font-size: 25px;
-}
-#login > .sumbit:hover {
-  background-color: #0899c9;
 }
 #login > input {
   padding: 20px;

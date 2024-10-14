@@ -1,0 +1,12 @@
+/*Phone display*/
+@media (max-width: 600px) {
+ 
+}
+/*Dekstop display*/
+@media (min-width: 601px) {
+}
+
+/*General Aspects*/
+.sketchfab-embed-wrapper > iframe {
+  box-shadow: 5px 5px 5px 5px;
+}
