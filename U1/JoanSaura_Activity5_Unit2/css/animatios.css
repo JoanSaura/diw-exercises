@@ -23,10 +23,8 @@
 }
 
 /*General Aspcets*/
-#user-cont:hover {
-  background-color: #000d11;
-}
-#lateral > .link {
+#lateral > .link
+ {
   background: linear-gradient(to bottom, #00a8e8, #007ea7, #003459);
   background-size: 100% 200%;
   transition: background-position 1s ease;
@@ -38,16 +36,11 @@
   background-position: 0 100%;
 }
 
-@keyframes colorShift {
-  0% {
-    background-color: #00a8e8;
-  }
-  50% {
-    background-color: #007ea7;
-  }
-  100% {
-    background-color: #003459;
-  }
+#user-cont:hover{
+  background: linear-gradient(to bottom, #00a8e8, #007ea7, #003459);
+  background-size: 100% 200%;
+
+  transition: background-position 1s ease;
 }
 
 #footer-links a:hover {
@@ -58,4 +51,10 @@
 }
 .assembly-pictures:hover .hidden-info {
   display: block;
+}
+#hidden-info{
+  transition: opacity 0.3s ease;
+}
+#login > .sumbit:hover {
+  background-color: #2c3e50;
 }
