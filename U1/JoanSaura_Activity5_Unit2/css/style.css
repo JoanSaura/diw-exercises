@@ -59,9 +59,8 @@
   }
 
   .sketchfab-embed-wrapper > iframe {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
+    width: 500px;
+    height: 450px;
   }
   #mobile-menu > a:nth-child(1) {
     grid-column: 1;
