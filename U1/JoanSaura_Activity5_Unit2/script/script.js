@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const closeBtn = document.querySelector("#lateral .close");
     const lateralMenu = document.getElementById("lateral");
+    const assemblyPictures = document.querySelectorAll(".assembly-pictures");
+
     let isMenuOpen = true;
   
     closeBtn.addEventListener("click", function() {
@@ -14,3 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
       isMenuOpen = !isMenuOpen;
     });
 });
+
+
+
+
