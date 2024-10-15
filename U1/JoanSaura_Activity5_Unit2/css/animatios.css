@@ -19,6 +19,7 @@
     color: #ffffff;
     transition: transform 0.3s;
   }
+  
 }
 
 /*General Aspcets*/
@@ -54,4 +55,7 @@
 }
 #login > .sumbit:hover {
   background-color: #0899c9;
+}
+.assembly-pictures:hover .hidden-info {
+  display: block;
 }
