@@ -130,7 +130,9 @@
     display: grid;
     padding: 20px;
     position: fixed;
-    height: 50vh;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
     border-radius: 0 25px 25px 0;
     border: 2px solid black;
     box-sizing: border-box;
@@ -184,7 +186,7 @@
     cursor: pointer;
   }
   #login {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
   }
 }
 
@@ -293,7 +295,7 @@ p {
 }
 
 #assembly-info-display .assembly-pictures:nth-child(6) {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 5;
   height: 250px;
 }
 
