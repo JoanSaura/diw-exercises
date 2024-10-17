@@ -45,9 +45,6 @@
 #footer-links a:hover {
   text-decoration: underline;
 }
-#login > .sumbit:hover {
-  background-color: #0899c9;
-}
 .assembly-pictures:hover .hidden-info {
   display: block;
 }
