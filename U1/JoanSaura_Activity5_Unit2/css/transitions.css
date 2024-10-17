@@ -39,7 +39,6 @@
 #user-cont:hover{
   background: linear-gradient(to bottom, #00a8e8, #007ea7, #003459);
   background-size: 100% 200%;
-
   transition: background-position 1s ease;
 }
 
