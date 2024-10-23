@@ -1,0 +1,17 @@
+$primary : red;
+$width_dekstop : 90%;
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+body {
+    background-color: $primary;
+    @include sizes($width_dekstop,100vh)
+}
+
+#main {
+    @include sizes(500px,500px );
+    border: 1px solid black;
+}
