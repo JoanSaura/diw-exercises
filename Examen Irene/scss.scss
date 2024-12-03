@@ -1,0 +1,18 @@
+@mixin ejemplo($radius,$margin) {
+    border-radius: $radius;
+    margin:$margin;    
+}
+.box{
+    @include ejemplo(15px,20px);
+    background-color: antiquewhite;
+        &:hover{
+            cursor: pointer;
+            font-size: larger;
+            transform: 0.3 ease;
+        }
+}
+@for $i from 1 through 6 {
+    .box-#{$i} {
+      background-color: lighten($base-color, $i * 5%);
+    }
+}  

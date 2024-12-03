@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-    
+    .box{
+        @apply bg-white shadow-md p-4 w-48 flex justify-center hover:cursor-pointer
+    }
 }
 
